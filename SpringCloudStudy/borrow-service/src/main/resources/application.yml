@@ -20,3 +20,9 @@ eureka:
 feign:
   circuitbreaker: # 开启熔断器
     enabled: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*' # 开启所有监控端点
